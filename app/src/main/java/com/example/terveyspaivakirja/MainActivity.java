@@ -16,12 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn = (Button)findViewById(R.id.button);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Kalorilaskuri.class));
-                finish();
+        btn.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, Kalorilaskuri.class));
+            finish();
 
-            }
         });
 }}
