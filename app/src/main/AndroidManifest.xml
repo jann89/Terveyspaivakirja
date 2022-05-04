@@ -11,6 +11,7 @@
         android:theme="@style/Theme.Terveyspaivakirja">
         <activity
             android:name=".Kalorilaskuri"
+            android:label="Kalorilaskuri"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
