@@ -4,6 +4,5 @@
         android:id="@+id/date_picker"
         android:icon="@android:drawable/ic_menu_day"
         android:title="Select a date"
-        android:onClick="showDatePickerDialog"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom" />
 </menu>
