@@ -1,37 +1,24 @@
 package com.example.terveyspaivakirja;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.TextView;
-
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedinstancestate) {
-        super.onCreate(savedinstancestate);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView miau = (TextView) findViewById(R.id.miau);
-        Button btn = (Button) findViewById(R.id.button);
+        Fragment menu = new MenuFragment();
+        menu.onCreateOptionsMenu(R.menu.main_menu, getMenuInflater());
+    }
 
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            String value = extras.getString("21");
-            //The key argument here must match that used in the other activity
-            miau.setText(value);
-
-        }
-        btn.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, Kalorilaskuri.class));
-
-
-        });
+    public void showDatePickerDialog(View v) {
+        DialogFragment fragment = new DatePickerFragment();
+        fragment.show(getSupportFragmentManager(), "datePicker");
     }
 }
-
-
-
-
