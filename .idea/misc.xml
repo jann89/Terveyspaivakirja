@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/drawable/ic_launcher_background.xml" value="0.4185" />
-        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/activity_kalorilaskuri.xml" value="0.5" />
-        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/activity_ruoka_paivakirja.xml" value="0.5" />
+        <entry key="..\:/Users/Janne Opiskelu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/Users/Janne Opiskelu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/unipaivakirja.xml" value="0.259375" />
       </map>
     </option>
   </component>
