@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".Unipaivakirja2"
+            android:exported="false" />
+        <activity
             android:name=".Kalorilaskuri"
             android:exported="false"
             android:label="Kalorilaskuri" />

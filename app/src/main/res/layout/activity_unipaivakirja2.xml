@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SeekBar
+        android:id="@+id/laatumittari"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="1dp"
+        android:indeterminate="false"
+        android:valueFrom="0"
+        android:valueTo="10"
+        android:stepSize="1"
+        app:layout_constraintBottom_toTopOf="@+id/unenmaara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unenlaatu" />
+
+    <SeekBar
+        android:id="@+id/tuntimittari"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:max="10"
+        android:progress="3"
+        app:layout_constraintBottom_toTopOf="@+id/virkeys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unenmaara" />
+
+    <SeekBar
+        android:id="@+id/virkeysmittari"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="1dp"
+        android:max="10"
+        android:progress="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/virkeys"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <TextView
+        android:id="@+id/unenlaatu"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:text="Kuinka hyvin nukuit viime yönä?"
+        app:layout_constraintBottom_toTopOf="@+id/laatumittari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/unenmaara"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="1dp"
+        android:text="Kuinka monta tuntia nukuit?"
+        app:layout_constraintBottom_toTopOf="@+id/tuntimittari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laatumittari" />
+
+    <TextView
+        android:id="@+id/virkeys"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="5dp"
+        android:text="Olitko aamulla virkeä?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <TextView
+        android:id="@+id/keskiarvo"
+        android:layout_width="142dp"
+        android:layout_height="25dp"
+        android:text="xd"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="0dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="250dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="500dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="156dp"
+        android:onClick="onButtonClick2"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keskiarvo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

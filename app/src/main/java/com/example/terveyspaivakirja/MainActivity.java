@@ -74,13 +74,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
+    //*Eetu
     public void kalorilasku() {
         TextView tv2 = findViewById(R.id.textView8);
         TextView tv3 = findViewById(R.id.textView9);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String value = extras.getString("21");
+            //Aikaisempi sama koodi kuin yllä
+            //Lisätään 3 muuttujaa joilla lasketaan päivänkalorin saanti suosituksesta
             int luku = Integer.parseInt(value);
             int luku2 = 2000;
             int lasku = luku2 - luku;
