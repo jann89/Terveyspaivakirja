@@ -1,12 +1,10 @@
 package com.example.terveyspaivakirja;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
@@ -20,10 +18,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
-
-    @Override
-    /**@author Eetu*/
     /**OnResumelle kutsutaan kalorit metodi*/
+    @Override
     protected void onResume() {
         super.onResume();
         kalorit();
@@ -67,14 +63,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**@author Eetu*/
+    /**Haetaan Textview*/
+    /**Haetaan intent Kalorilaskurista ,joka sisältää päivän kalorit*/
+    /**Asetetaan intentin arvo tv textview:hin*/
     public void kalorit() {
-        /**Haetaan Textview*/
+
         TextView tv = findViewById(R.id.textView6);
-        /**Haetaan intent Kalorilaskurista ,joka sisältää päivän kalorit*/
+
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String value = extras.getString("21");
-            /**Asetetaan intentin arvo tv textview:hin*/
             tv.setText(value);
         }
 

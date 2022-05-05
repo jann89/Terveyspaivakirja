@@ -13,7 +13,9 @@ import android.widget.TextView;
 
 /**@author Eetu*/
 public class Kalorilaskuri extends AppCompatActivity {
-    /**Luopdaan nappi ja EditTexitit ja view:t*/
+    /**
+     * Luopdaan nappi ja EditTexitit ja view:t
+     */
     private Button nappi;
     private EditText aamu;
     private EditText lounas;
@@ -26,7 +28,9 @@ public class Kalorilaskuri extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kalorilaskuri);
 
-        /**Kutsutaan LaskeKalorit metodi*/
+        /**
+         * Kutsutaan LaskeKalorit metodi
+         */
         LaskeKalorit();
     }
 
