@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_unipaivakirja2);
+        setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
     }
     //*Eetu*
     public void onButtonClick2(View view) {
-        Intent i = new Intent(MainActivity.this, Unipaivakirja2.class);
-        startActivity(i);
+        Intent u = new Intent(MainActivity.this, Kalorilaskuri.class);
+        startActivity(u);
     }
 
 
