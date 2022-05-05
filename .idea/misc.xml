@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Janne Opiskelu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/activity_main.xml" value="0.259375" />
-        <entry key="..\:/Users/Janne Opiskelu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/unipaivakirja.xml" value="0.259375" />
+        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/diary_fragment.xml" value="0.67" />
+        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/unipaivakirja.xml" value="0.5" />
+        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/menu/main_menu.xml" value="0.33" />
+        <entry key="..\:/Users/lr19/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/lr19/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/diary_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/lr19/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/fragment_blank.xml" value="0.25" />
+        <entry key="..\:/Users/lr19/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/main_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/lr19/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/menu/main_menu.xml" value="0.18541666666666667" />
       </map>
     </option>
   </component>
