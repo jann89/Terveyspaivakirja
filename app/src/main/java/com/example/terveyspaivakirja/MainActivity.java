@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         kalorit();
+        kalorilasku();
     }
 
     public void showDatePickerDialog() {
@@ -72,6 +73,25 @@ public class MainActivity extends AppCompatActivity {
             tv.setText(value);
         }
 
+    }
+
+    public void kalorilasku(){
+        TextView tv2 = findViewById(R.id.textView8);
+        TextView tv3 = findViewById(R.id.textView9);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String value = extras.getString("21");
+            int luku = Integer.parseInt(value);
+            int luku2 = 2000;
+            int lasku = luku2 - luku;
+            String laskus = String.valueOf(lasku);
+            if (lasku > 0){
+            tv2.setText(laskus);
+            }else {
+                tv2.setText("0");
+                tv3.setText("Päivän kalorit syöty!");
+            }
+        }
     }
 
 
