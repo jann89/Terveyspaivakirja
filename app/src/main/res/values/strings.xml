@@ -1,3 +1,7 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fi">
     <string name="app_name">Terveyspäiväkirja</string>
+    <string name="caloriesTitle">Kalorit</string>
+    <string name="caloriesGot">Saatu</string>
+    <string name="caloriesLeft">Jäljellä</string>
+    <string name="caloriesAddButton">Lisää</string>
 </resources>
