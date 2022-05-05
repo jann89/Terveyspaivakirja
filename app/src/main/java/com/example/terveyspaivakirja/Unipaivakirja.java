@@ -5,18 +5,19 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+/**Janne*/
 public class Unipaivakirja extends AppCompatActivity {
-    SeekBar laatumittari;
-    SeekBar tuntimittari;
-    SeekBar virkeysmittari;
-    TextView keskiarvo;
+    /**Seekbarien ja textview julistus*/
+    private SeekBar laatumittari;
+    private SeekBar tuntimittari;
+    private SeekBar virkeysmittari;
+    private TextView keskiarvo;
     @Override
         protected void onCreate(Bundle savedInstaceState) {
         super.onCreate(savedInstaceState);
         setContentView(R.layout.unipaivakirja);
 
-        //mittareiden currentvalue
+        /**unimittareiden current value*/
         SeekBar laatumittari = (SeekBar) findViewById(R.id.laatumittari);
         int currentValue = laatumittari.getProgress();
         SeekBar tuntimittari = (SeekBar) findViewById(R.id.tuntimittari);
@@ -24,7 +25,7 @@ public class Unipaivakirja extends AppCompatActivity {
         SeekBar virkeysmittari = (SeekBar) findViewById(R.id.virkeysmittari);
         int currentValue3 = virkeysmittari.getProgress();
 
-        //mittareiden keskiarvon laskeminen eli "uni-indeksi"
+        /**mittareiden keskiarvon laskeminen eli "uni-indexi"*/
         int total = 0;
         total += laatumittari.getProgress();
         total += tuntimittari.getProgress();
