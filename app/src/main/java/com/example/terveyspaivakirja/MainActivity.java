@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    //OnResumelle kutsutaan kalorit metodi
+    /**OnResumelle kutsutaan kalorit metodi*/
     protected void onResume() {
         super.onResume();
         kalorit();
@@ -52,20 +52,20 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //*Eetu*
+    /**Eetu*/
     public void onButtonClick(View view) {
         Intent i = new Intent(MainActivity.this, Kalorilaskuri.class);
         startActivity(i);
     }
 
-    //*Eetu*
+    /**Eetu*/
     public void onButtonClick2(View view) {
         Intent u = new Intent(MainActivity.this, UnipaivakirjaEetu.class);
         startActivity(u);
     }
 
 
-    //*Eetu
+    /**Eetu*/
     public void kalorit() {
         //Haetaan Textview
         TextView tv = findViewById(R.id.textView6);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //*Eetu
+    /**Eetu*/
     public void kalorilasku() {
         TextView tv2 = findViewById(R.id.textView8);
         TextView tv3 = findViewById(R.id.textView9);

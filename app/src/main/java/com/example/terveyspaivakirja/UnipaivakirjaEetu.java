@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
-//*Eetu*
+/**Eetu*/
 public class UnipaivakirjaEetu extends AppCompatActivity {
-    //Seekbarien ja textviewden julistus
+    /**Seekbarien ja textviewden julistus*/
     private SeekBar unimaara;
     private SeekBar unilaatu;
     private SeekBar univirkeys;
@@ -23,7 +23,7 @@ public class UnipaivakirjaEetu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unipaivakirja_eetu);
 
-        //Yhdistetään kaikki layoutissa oleviin
+        /**Yhdistetään kaikki layoutissa oleviin*/
         unimaara = (SeekBar) findViewById(R.id.seekbar1);
         univirkeys = (SeekBar) findViewById(R.id.seekbar2);
         unilaatu = (SeekBar) findViewById(R.id.seekbar3);
@@ -33,11 +33,11 @@ public class UnipaivakirjaEetu extends AppCompatActivity {
         maara = (TextView) findViewById(R.id.uni);
         unindex = (TextView) findViewById(R.id.uniindex);
 
-        //Käytetään jokaiselle omaa OnSeekBarChangeListener
+        /**Käytetään jokaiselle omaa OnSeekBarChangeListener*/
         unimaara.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                //Muutetaan textiä textviewssä sen mukaan missä asennossa seekbar on
+                /**Muutetaan textiä textviewssä sen mukaan missä asennossa seekbar on */
                 maara.setText(Integer.toString(i));
             }
 
@@ -89,7 +89,7 @@ public class UnipaivakirjaEetu extends AppCompatActivity {
 
     }
     public void onButtonClick(View view){
-        //Nappia painettaessa lasketaan uniindex
+        /**Nappia painettaessa lasketaan uniindex*/
         int luku1 = Integer.parseInt((String) laatu.getText());
         int luku2 = Integer.parseInt((String) virkeys.getText());
         int luku3 = Integer.parseInt((String) maara.getText());

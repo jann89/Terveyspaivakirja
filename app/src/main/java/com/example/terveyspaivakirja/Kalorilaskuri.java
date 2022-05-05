@@ -11,9 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-//*Eetu*
+/**Eetu*/
 public class Kalorilaskuri extends AppCompatActivity {
-    //Luopdaan nappi ja EditTexitit ja view:t
+    /**Luopdaan nappi ja EditTexitit ja view:t*/
     private Button nappi;
     private EditText aamu;
     private EditText lounas;
@@ -26,12 +26,12 @@ public class Kalorilaskuri extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kalorilaskuri);
 
-        //Kutsutaan LaskeKalorit metodi
+        /**Kutsutaan LaskeKalorit metodi*/
         LaskeKalorit();
     }
 
     public void LaskeKalorit() {
-        //Yhdistetään kaikki oikeisiin
+        /**Yhdistetään kaikki oikeisiin*/
         aamu = ((EditText) findViewById(R.id.aamupala));
         lounas = ((EditText) findViewById(R.id.lounas));
         paiva = ((EditText) findViewById(R.id.paivallinen));
@@ -40,26 +40,26 @@ public class Kalorilaskuri extends AppCompatActivity {
         kalorit = (TextView) findViewById(R.id.kalorit);
         kalorit.setText("0");
         nappi.setOnClickListener(v -> {
-            //Tehdään muuttujat, jotka hakavet arvot edittext kentistä
+            /**Tehdään muuttujat, jotka hakavet arvot edittext kentistä*/
             int luku1 = Integer.parseInt(aamu.getText().toString());
             int luku2 = Integer.parseInt(lounas.getText().toString());
             int luku3 = Integer.parseInt(paiva.getText().toString());
             int luku4 = Integer.parseInt(vali.getText().toString());
             int summa = luku1 + luku2 + luku3 + luku4;
-            //Lisätään summa kalorit kenttään
+            /**Lisätään summa kalorit kenttään*/
             kalorit.setText(Integer.toString(summa));
 
         });
     }
 
     public void onButtonClick(View view) {
-        //Haetaan dataa kalorikentästä
+        /**Haetaan dataa kalorikentästä*/
         String tieto = kalorit.getText().toString();
-        //Tehdään intent millä avataan mainacitivity
+        /**Tehdään intent millä avataan mainacitivity*/
         Intent i = new Intent(Kalorilaskuri.this, MainActivity.class);
-        //Laitetaan data intenttiin
+        /**Laitetaan data intenttiin*/
         i.putExtra("21", tieto);
-        //Aloitetaan mainactivity
+        /**Aloitetaan mainactivity*/
         startActivity(i);
     }
 
