@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Terveyspaivakirja"
 include ':app'
+include ':mylibrary'
+include ':lib'
