@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //*Eetu*
     public void onButtonClick2(View view) {
-        Intent u = new Intent(MainActivity.this, Kalorilaskuri.class);
+        Intent u = new Intent(MainActivity.this, UnipaivakirjaEetu.class);
         startActivity(u);
     }
 

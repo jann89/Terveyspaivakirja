@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/activity_kalorilaskuri.xml" value="0.5" />
+        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/activity_unipaivakirja2.xml" value="0.5407407407407407" />
+        <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/activity_unipaivakirja_eetu.xml" value="0.5" />
         <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/diary_fragment.xml" value="0.5" />
         <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/layout/unipaivakirja.xml" value="0.18631178707224336" />
         <entry key="..\:/Users/eetu/AndroidStudioProjects/Terveyspaivakirja/app/src/main/res/menu/main_menu.xml" value="0.33" />
