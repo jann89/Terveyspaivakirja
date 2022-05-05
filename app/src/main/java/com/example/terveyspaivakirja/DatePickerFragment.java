@@ -9,7 +9,16 @@ import androidx.fragment.app.DialogFragment;
 
 import java.util.Calendar;
 
+/**
+* Fragment päivämäärän valintaan. Luodaan kun ylävalikosta painaa kalenterin kuvaketta
+* @author tammipuu
+*/
 public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+    /**
+     * Palauttaa päivämäärädialogin, joka näytetään ruudulla
+     * @param savedInstanceState instanssin tila
+     * @return uusi DatePickerDialog-objekti
+     */
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         final Calendar c = Calendar.getInstance();
@@ -20,6 +29,14 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
         return new DatePickerDialog(getActivity(), this, year, month, day);
     }
 
+    /**
+     * Suoritetaan kun päivämäärä valitaan. Tulisi asettaa päivämäärätiedot erilliseen
+     * luokkaan ja kutsua metodia, jolla päivitetään näkymä.
+     * @param view DatePicker-objekti
+     * @param year Palautettu vuosi
+     * @param month Palautettu kuukausi
+     * @param day Palautettu päivä
+     */
     @Override
     public void onDateSet(DatePicker view, int year, int month, int day) {
 

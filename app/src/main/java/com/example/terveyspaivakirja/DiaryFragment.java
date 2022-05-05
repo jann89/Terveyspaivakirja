@@ -9,6 +9,10 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+/**
+ * Fragment yleisnäkymälle, ei tee mitään erikoista
+ * @author tammipuu
+ */
 public class DiaryFragment extends Fragment {
     Button button;
     public DiaryFragment() {

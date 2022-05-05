@@ -11,6 +11,11 @@ import androidx.fragment.app.DialogFragment;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * @author tammipuu
+     * Alustaa näkymän ja asettaa ylävalikon
+     * @param savedInstanceState instanssin tila
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,17 +32,34 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * @author tammipuu
+     * Näyttää päivämäärädialogin
+     */
     public void showDatePickerDialog() {
         DialogFragment fragment = new DatePickerFragment();
         fragment.show(getSupportFragmentManager(), "datePicker");
     }
 
+    /**
+     * @author tammipuu
+     * Alustaa ylävalikon
+     * @param menu Valikko-objekti
+     * @return yläluokan kutsu
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
+    /**
+     * @author tammipuu
+     * Kutsutaan ylävalikon painikkeita valitessa ja suorittaa painikketta vastaavat
+     * toiminnot
+     * @param item valikon painike
+     * @return suoritettiinko metodi onnistuneesti
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
