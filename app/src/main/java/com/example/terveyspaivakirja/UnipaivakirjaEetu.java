@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
-/**Eetu*/
+/**@authorEetu*/
 public class UnipaivakirjaEetu extends AppCompatActivity {
     /**Seekbarien ja textviewden julistus*/
     private SeekBar unimaara;
