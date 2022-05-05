@@ -11,8 +11,8 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
             android:name=".Kalorilaskuri"
-            android:label="Kalorilaskuri"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Kalorilaskuri" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
