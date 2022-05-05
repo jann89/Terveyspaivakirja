@@ -16,13 +16,21 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView tv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+    }
 
+    @Override
+    //OnResumelle kutsutaan kalorit metodi
+    protected void onResume() {
+        super.onResume();
+        kalorit();
     }
 
     public void showDatePickerDialog() {
@@ -38,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()) {
+        switch (item.getItemId()) {
             case R.id.date_picker:
                 showDatePickerDialog();
                 return true;
@@ -46,11 +54,25 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-    public void onButtonClick(View view){
-        Intent i =new Intent(MainActivity.this, Kalorilaskuri.class);
+
+    public void onButtonClick(View view) {
+        Intent i = new Intent(MainActivity.this, Kalorilaskuri.class);
         startActivity(i);
     }
 
+    //*Eetu
+    public void kalorit() {
+        //Haetaan Textview
+        TextView tv = findViewById(R.id.textView6);
+        //Haetaan intent Kalorilaskurista ,joka sisältää päivän kalorit
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String value = extras.getString("21");
+            //Asetetaan intentin arvo tv textview:hin
+            tv.setText(value);
+        }
+
+    }
 
 
 }
