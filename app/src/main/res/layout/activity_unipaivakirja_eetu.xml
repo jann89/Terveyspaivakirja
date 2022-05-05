@@ -11,9 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="60dp"
-        android:text="Unipäiväkirja"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="64dp"
+        android:text="Uni"
         android:textSize="50sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,8 +22,8 @@
         android:id="@+id/seekbar1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="40dp"
         android:max="10"
         android:progress="5"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,8 +33,8 @@
         android:id="@+id/seekbar2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="80dp"
         android:max="10"
         android:progress="5"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,8 +44,8 @@
         android:id="@+id/seekbar3"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="120dp"
         android:max="10"
         android:progress="5"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,10 +55,10 @@
         android:id="@+id/textviewuni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="304dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:text="5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekbar2"
         app:layout_constraintTop_toBottomOf="@+id/seekbar1" />
 
     <TextView
@@ -75,17 +75,17 @@
         android:id="@+id/virke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="304dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
         android:text="5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekbar3"
         app:layout_constraintTop_toBottomOf="@+id/seekbar1" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
+        android:layout_marginStart="152dp"
         android:layout_marginTop="24dp"
         android:onClick="onButtonClick"
         android:text="LAske"
@@ -96,8 +96,8 @@
         android:id="@+id/textView15"
         android:layout_width="173dp"
         android:layout_height="24dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="36dp"
         android:text="Unindeksi"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,11 +107,41 @@
         android:id="@+id/uniindex"
         android:layout_width="38dp"
         android:layout_height="42dp"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="20dp"
         android:text="0"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="39dp"
+        android:text="Unen määrä"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="23dp"
+        android:text="Unen laatu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="21dp"
+        android:text="Virkeys"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
