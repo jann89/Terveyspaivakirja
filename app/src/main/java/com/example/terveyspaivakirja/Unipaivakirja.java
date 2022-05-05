@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class unipaivakirja extends AppCompatActivity {
+public class Unipaivakirja extends AppCompatActivity {
     SeekBar laatumittari;
     SeekBar tuntimittari;
     SeekBar virkeysmittari;

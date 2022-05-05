@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.unipaivakirja);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
@@ -61,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+
+
+
     //*Eetu
     public void kalorit() {
         //Haetaan Textview
@@ -75,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void kalorilasku(){
+    public void kalorilasku() {
         TextView tv2 = findViewById(R.id.textView8);
         TextView tv3 = findViewById(R.id.textView9);
         Bundle extras = getIntent().getExtras();
@@ -85,9 +88,9 @@ public class MainActivity extends AppCompatActivity {
             int luku2 = 2000;
             int lasku = luku2 - luku;
             String laskus = String.valueOf(lasku);
-            if (lasku > 0){
-            tv2.setText(laskus);
-            }else {
+            if (lasku > 0) {
+                tv2.setText(laskus);
+            } else {
                 tv2.setText("0");
                 tv3.setText("Päivän kalorit syöty!");
             }
