@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-/**Eetu*/
+/**@author Eetu*/
 public class Kalorilaskuri extends AppCompatActivity {
     /**Luopdaan nappi ja EditTexitit ja view:t*/
     private Button nappi;
