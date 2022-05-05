@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="60dp"
         android:text="Unipäiväkirja"
         android:textSize="50sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,12 +52,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/laatu"
+        android:id="@+id/textviewuni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="304dp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekbar1" />
 
@@ -66,8 +66,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="127dp"
-        android:text="TextView"
+        android:layout_marginTop="168dp"
+        android:text="5"
         app:layout_constraintStart_toEndOf="@+id/seekbar1"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,29 +77,41 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="304dp"
         android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:text="5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekbar1" />
-
-    <TextView
-        android:id="@+id/uniindex"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="24dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekbar3" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="24dp"
         android:onClick="onButtonClick"
-        android:text="Button"
+        android:text="LAske"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uniindex" />
+        app:layout_constraintTop_toBottomOf="@+id/seekbar3" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="173dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="32dp"
+        android:text="Unindeksi"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <TextView
+        android:id="@+id/uniindex"
+        android:layout_width="38dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

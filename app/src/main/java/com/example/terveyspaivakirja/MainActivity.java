@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         kalorit();
         kalorilasku();
+
     }
 
     public void showDatePickerDialog() {
@@ -50,17 +51,18 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
     //*Eetu*
     public void onButtonClick(View view) {
         Intent i = new Intent(MainActivity.this, Kalorilaskuri.class);
         startActivity(i);
     }
+
     //*Eetu*
     public void onButtonClick2(View view) {
         Intent u = new Intent(MainActivity.this, UnipaivakirjaEetu.class);
         startActivity(u);
     }
-
 
 
     //*Eetu
@@ -76,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
     //*Eetu
     public void kalorilasku() {
         TextView tv2 = findViewById(R.id.textView8);

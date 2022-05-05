@@ -2,20 +2,22 @@ package com.example.terveyspaivakirja;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class UnipaivakirjaEetu extends AppCompatActivity {
-    SeekBar unimaara;
-    SeekBar unilaatu;
-    SeekBar univirkeys;
-    TextView tv;
-    TextView laatu;
-    TextView virkeys;
-    TextView maara;
-    TextView unindex;
+
+    private SeekBar unimaara;
+    private SeekBar unilaatu;
+    private SeekBar univirkeys;
+    private TextView tv;
+    private TextView laatu;
+    private TextView virkeys;
+    private TextView maara;
+    private TextView unindex;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,13 +28,13 @@ public class UnipaivakirjaEetu extends AppCompatActivity {
         unilaatu = (SeekBar) findViewById(R.id.seekbar3);
         tv = (TextView) findViewById(R.id.textView);
         laatu = (TextView) findViewById(R.id.virke);
-        virkeys = (TextView) findViewById(R.id.laatu);
+        virkeys = (TextView) findViewById(R.id.textviewuni);
         maara = (TextView) findViewById(R.id.uni);
         unindex = (TextView) findViewById(R.id.uniindex);
         unimaara.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                maara.setText("" + i);
+                maara.setText(Integer.toString(i));
             }
 
             @Override
@@ -49,7 +51,7 @@ public class UnipaivakirjaEetu extends AppCompatActivity {
         unilaatu.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                laatu.setText("" + i);
+                laatu.setText(Integer.toString(i));
             }
 
             @Override
@@ -66,7 +68,7 @@ public class UnipaivakirjaEetu extends AppCompatActivity {
         univirkeys.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                virkeys.setText("" + i);
+                virkeys.setText(Integer.toString(i));
             }
 
             @Override
@@ -81,9 +83,6 @@ public class UnipaivakirjaEetu extends AppCompatActivity {
         });
 
 
-
-
-
     }
     public void onButtonClick(View view){
 
@@ -91,9 +90,11 @@ public class UnipaivakirjaEetu extends AppCompatActivity {
         int luku2 = Integer.parseInt((String) virkeys.getText());
         int luku3 = Integer.parseInt((String) maara.getText());
         int summa = luku1 + luku2 + luku3;
-        unindex.setText("" + summa);
+        int index = summa / 3;
+        unindex.setText(Integer.toString(index));
 
     }
+
 
 }
 
